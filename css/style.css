@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* me.html css settings */
+header{
+    height: 50px;
+    background-color: tomato;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+    padding: 15px;
+    color: white;
+}
+
+.main{
+    border: solid 2px yellow;
+    margin-top: 50px;
+}
+
+p{
+    font-size: 50px;
+}
+
+/* shapes.html css styling */
+.topbanner{
+    background-image: url(../images/top-banner.jpg);
+    background-size: cover;
+    height: 400px;
+}
+
+.logoname{
+    margin-top: 10px;
+    margin-left: 5px;
+    font-family: cursive;
+}
+
+.toptext{
+    font-size: 40px;
+    line-height: 30px;
+}
+
+.welcome{
+    margin-top: 150px;
+}
+
+.bannertext{
+    margin-top: 150px;
+    margin-left: 200px;
+    transform: rotate(-5deg);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-size: 90px;
+    line-height: 75px;
+    animation-name: blinking;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* animation code */
+@keyframes blinking{
+    0%   {-webkit-text-fill-color: transparent;}
+    100% {-webkit-text-fill-color: white;}
+}
+
+/* Style from small breakpoint and down */
+@media (max-width: 600px){
+  .welcome{
+    margin-top: 20px;
+  }
+
+  .toptext{
+    font-size: 20px;
+    line-height: 15px;
+}
+
+  .bannertext{
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    line-height: 25px;
+  }
+}
